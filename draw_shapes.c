@@ -1,3 +1,5 @@
+
+
 #include <stdio.h>
 #include "draw.h"
 
@@ -23,6 +25,28 @@ void print_triangle(int leftCol, int size)
     for (col = 0; col < minCol; col++) putchar(' ');
     for (       ; col <= maxCol; col++) putchar('*');
     putchar('\n');
+  }
+}
+//Print arrow
+void print_arrow(int n)
+{
+ 
+  putchar('\n');
+  for(int i = 0; i < n +n - 1; i++){
+    int size = i;
+    
+    if(i>= n){
+       size = n+n - i - 2;
+    }
+    for(int j = 0;j<=size+size; j++){
+      if(j < size){
+	putchar(' ');
+      }
+      else{
+	putchar('*');
+      }
+    }
+    printf("\n");
   }
 }
 

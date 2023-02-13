@@ -1,5 +1,4 @@
 
-
 #include <stdio.h>
 #include "draw.h" // project-related declarations
 
@@ -33,7 +32,6 @@ int main()
       break;
     case 't':
       puts("You selected arrow:");
-      print_arrow(5);
       break;
     case 'q':
       puts("Bye!");
